@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="testRavltOpenFl" package="testRavltOpenFl" version="1.0.0" company="valeria" />
+	
+	<!-- output -->
+	<app main="Main" file="testRavltOpenFl" path="bin" />
+	
+	<window background="#ffffff" fps="60" />
+	<window width="800" height="480"/>
+	<window orientation="landscape" vsync="false" antialiasing="4"/>
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="svg" />
+	<haxelib name="actuate" />
+	
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/img" rename="assets" />
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>
